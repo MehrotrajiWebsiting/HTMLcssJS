@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lets go</title>
+    <style>
+        *{
+            box-sizing: border-box; /*NOW THE WIDTH SET IS FOR CONTENT+BORDER+PADDING (not margin)*/
+            margin: 0;
+        }
+        body{
+            background-color: #556d6d;
+        }
+        .container{
+            border: 4px solid black;
+            box-shadow: -10px 10px 5px black;  /* - for shadow on left (horizontal offset - vertical offset - blurness - color*/
+            background-color: antiquewhite;
+            margin: 10px;
+            margin-bottom: 15px;
+            padding: 20px 40px; /*20px for y (top and bottom) 40px for x(left and right)*/
+            width: 500px;
+            text-align: justify;
+            /* margin: auto; */
+            margin-top: 10px;
+            display: inline-block; /*This will make more than one box in a line according to their width*/
+            width: 45%;
+        }
+
+        .navbar{
+            background-color: #240b3f;
+            border-radius: 10px;
+        }
+        .navbar ul{
+            overflow: auto; /*so that the navbar is not removed after floating li elements*/
+        }
+        .navbar li{
+            list-style: none;
+            float: left;
+            padding-left: 10px;
+            margin: 13px 20px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color:#ca9a92;
+        }
+        .navbar li a:hover{
+            font-size: 20px;
+            background-color:#3b1d5a;
+        }
+        .search{
+            float: right;
+            padding: 12px 50px 12px 10px;
+        }
+        #search{
+            border-radius: 10px;
+            padding: 3px 17px;
+            border: 2px solid black;
+        }
+        .display{
+            margin: auto;
+            width:33%;
+            border: 2px solid black;
+            margin-top: 20px;
+            background-color:#2b7979;
+        }
+        .image{
+            width: 34px;
+            height: auto;
+            display: block; /*Due to this now margin auto will put image in center*/
+            margin: auto;
+            padding-top: 4px;
+        }
+        .imagetext{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>    
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Services</a></li>
+                <div class="search">
+                    <input type="search" name="search" id="search" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta eum quas tempore tempora sit officia atque similique doloremque harum! Ducimus quo laudantium incidunt? Iste libero quibusdam dolore est nesciunt fugit consequuntur odit sunt asperiores similique laudantium voluptatibus impedit, nisi esse. Sapiente cum laborum amet. Itaque nulla excepturi id optio.
+        </p>
+    </div>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="second">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta eum quas tempore tempora sit officia atque similique doloremque harum! Ducimus quo laudantium incidunt? Iste libero quibusdam dolore est nesciunt fugit consequuntur odit sunt asperiores similique laudantium voluptatibus impedit, nisi esse. Sapiente cum laborum amet. Itaque nulla excepturi id optio.
+        </p>
+    </div>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="third">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus soluta eum quas tempore tempora sit officia atque similique doloremque harum! Ducimus quo laudantium incidunt? Iste libero quibusdam dolore est nesciunt fugit consequuntur odit sunt asperiores similique laudantium voluptatibus impedit, nisi esse. Sapiente cum laborum amet. Itaque nulla excepturi id optio.
+        </p>
+    </div>
+    <div class="display">
+        <img src="../image/ball.jpg" alt="BAll" class="image" >
+        <h3 class="imagetext">This is a ball</h3>
+    </div>
+
+</body>
+</html>
